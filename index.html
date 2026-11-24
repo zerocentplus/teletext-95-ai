@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TELETEXT-95 AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header bar -->
+  <header id="tt-header">
+    <span id="tt-page-number">P100</span>
+    <span id="tt-title">TELETEXT-95 AI</span>
+    <span id="tt-header-right">
+      <button id="tt-sound-toggle">SND OFF</button>
+      <span id="tt-digit-buffer">___</span>
+    </span>
+  </header>
+
+  <div id="tt-screen">
+
+    <!-- Main page sections -->
+    <main id="tt-main">
+      <section id="p100" class="tt-page">
+        <div class="content"></div>
+      </section>
+
+      <section id="p200" class="tt-page">
+        <div class="content"></div>
+      </section>
+
+      <section id="p300" class="tt-page">
+        <div class="content"></div>
+      </section>
+
+      <section id="p400" class="tt-page">
+        <div class="content"></div>
+      </section>
+
+      <section id="p500" class="tt-page">
+        <div class="content"></div>
+      </section>
+    </main>
+
+    <!-- Fastext bar -->
+    <nav id="tt-fastext">
+      <button class="fastext-btn fastext-red"   data-color="red">RED</button>
+      <button class="fastext-btn fastext-green"  data-color="green">GREEN</button>
+      <button class="fastext-btn fastext-yellow" data-color="yellow">YELLOW</button>
+      <button class="fastext-btn fastext-blue"   data-color="blue">BLUE</button>
+    </nav>
+
+    <!-- On-screen numeric remote panel -->
+    <div id="tt-remote">
+      <div id="tt-remote-digits">
+        <button class="remote-btn remote-digit" data-digit="1">1</button>
+        <button class="remote-btn remote-digit" data-digit="2">2</button>
+        <button class="remote-btn remote-digit" data-digit="3">3</button>
+        <button class="remote-btn remote-digit" data-digit="4">4</button>
+        <button class="remote-btn remote-digit" data-digit="5">5</button>
+        <button class="remote-btn remote-digit" data-digit="6">6</button>
+        <button class="remote-btn remote-digit" data-digit="7">7</button>
+        <button class="remote-btn remote-digit" data-digit="8">8</button>
+        <button class="remote-btn remote-digit" data-digit="9">9</button>
+        <button class="remote-btn remote-back"  id="tt-remote-back">BACK</button>
+        <button class="remote-btn remote-digit" data-digit="0">0</button>
+      </div>
+    </div>
+
+  </div><!-- /#tt-screen -->
+
+  <script src="app.js"></script>
+</body>
+</html>
