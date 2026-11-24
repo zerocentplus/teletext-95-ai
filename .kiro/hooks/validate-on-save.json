@@ -1,0 +1,13 @@
+{
+  "name": "Validate Teletext JS & HTML on Save",
+  "version": "1.0.0",
+  "description": "Automatically validates JavaScript syntax whenever app.js or index.html is saved.",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["app.js", "index.html", "styles.css"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "node --check app.js"
+  }
+}
